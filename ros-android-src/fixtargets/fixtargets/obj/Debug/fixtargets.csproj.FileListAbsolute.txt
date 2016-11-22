@@ -1,0 +1,9 @@
+f:\projects\temp\fixtargets\fixtargets\bin\Debug\fixtargets.exe.config
+f:\projects\temp\fixtargets\fixtargets\bin\Debug\fixtargets.exe
+f:\projects\temp\fixtargets\fixtargets\bin\Debug\fixtargets.pdb
+f:\projects\temp\fixtargets\fixtargets\obj\Debug\fixtargets.csprojResolveAssemblyReference.cache
+f:\projects\temp\fixtargets\fixtargets\obj\Debug\fixtargets.exe
+f:\projects\temp\fixtargets\fixtargets\obj\Debug\fixtargets.pdb
+C:\Users\gbrill\Downloads\ros-android-src\fixtargets\fixtargets\bin\Debug\fixtargets.exe.config
+C:\Users\gbrill\Downloads\ros-android-src\fixtargets\fixtargets\obj\Debug\fixtargets.exe
+C:\Users\gbrill\Downloads\ros-android-src\fixtargets\fixtargets\obj\Debug\fixtargets.pdb

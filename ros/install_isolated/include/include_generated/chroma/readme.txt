@@ -1,0 +1,1 @@
+be sure that the rzsdk64 dll is installed and you've run that stupid .reg file AFTER you installed it.

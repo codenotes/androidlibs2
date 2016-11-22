@@ -1,0 +1,296 @@
+
+F:\PROJECTS\infusion\ros-android\ros>set PYTHON_ROOT=E:\WARE\PYTHON27 
+
+F:\PROJECTS\infusion\ros-android\ros>set PATH=F:\PROJECTS\infusion\ros-android\ros\;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\NativeBinaries\x86;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\NativeBinaries\x86;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\NativeBinaries\x86;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\ImageMagick-6.7.6-Q16;E:\ware\python27\Scripts\;E:\ware\python27\;%CommonProgramFiles%\Microsoft Shared\Windows Live;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter\Driver;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;c:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files (x86)\Common Files\HP\Digital Imaging\bin;C:\Program Files (x86)\HP\Digital Imaging\bin\;C:\Program Files (x86)\HP\Digital Imaging\bin\Qt\Qt 4.3.3;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Subversion\bin;C:\Program Files\doxygen\bin;C:\SysGCC\msp430-elf\bin;f:\SysGCC\raspberry-jessie\bin;%USERPROFILE%\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;F:\SysGCC\powerpc-linux-g\bin;C:\Program Files (x86)\Nordic Semiconductor\nrf51\bin\;f:\SysGCC\arm-eabi\bin;f:\SysGCC\msp430-new\bin;C:\SysGCC\arm-eabi\bin;f:\SysGCC\esp8266\bin;C:\Program Files (x86)\Nordic Semiconductor\nrf5x\bin\;E:\WARE\CooCox\CoIDE_V2Beta\bin;F:\SysGCC\BeagleDebian\bin;F:\SysGCC\esp8266x\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Skype\Phone\;F:\ware\HashiCorp\Vagrant\bin;C:\Users\ivan\.dnx\bin;C:\Users\ivan\AppData\Local\Code\bin;f:\SysGCC\msp430-elf-ti\bin;C:\Program Files (x86)\Microsoft Visual Studio 2008 SDK\VisualStudioIntegration\Tools\Sandcastle\ProductionTools\;f:\SysGCC\Raspberry-j2\bin;C:\Program Files (x86)\CMake\bin;E:\WARE\PYTHON27 
+
+F:\PROJECTS\infusion\ros-android\ros>set PYTHONPATH=;F:\PROJECTS\infusion\ros-android\ros\install_isolated\lib\site-packages 
+
+F:\PROJECTS\infusion\ros-android\ros>python ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=RelWithDebInfo -DBoost_USE_STATIC_LIBS=1 -DBUILD_SHARED_LIBS=1 --only-pkg-with-deps=roscpp_tutorials --from-pkg=roscpp_tutorials --cmake-args -G "Unix Makefiles" -DCMAKE_TOOLCHAIN_FILE=F:\PROJECTS\infusion\ros-android\toolchain.cmake 
+[  0%] "Built target _roscpp_tutorials_generate_messages_check_deps_TwoInts"
+[  0%] "Built target std_msgs_generate_messages_cpp"
+[  3%] "Built target roscpp_tutorials_generate_messages_cpp"
+[  3%] "Built target roscpp_tutorials_gencpp"
+Linking CXX executable F:/PROJECTS/infusion/ros-android/ros/devel_isolated/roscpp_tutorials/lib/roscpp_tutorials/add_two_ints_client
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::__throw_out_of_range_fmt(char const*, ...)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::_Rb_tree_increment(std::_Rb_tree_node_base const*)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::_Rb_tree_decrement(std::_Rb_tree_node_base const*)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::__throw_length_error(char const*)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::_Rb_tree_decrement(std::_Rb_tree_node_base*)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::runtime_error::~runtime_error()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::bad_cast::~bad_cast()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to '__cxa_call_unexpected'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&, unsigned int, unsigned int)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::string::find_first_of(char const*, unsigned int, unsigned int) const'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::string::_M_mutate(unsigned int, unsigned int, unsigned int)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::string::append(char const*, unsigned int)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to '__cxa_allocate_exception'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to '__cxa_throw'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to '__cxa_free_exception'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::locale::locale()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::locale::classic()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::locale::operator==(std::locale const&) const'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::locale::~locale()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::string::reserve(unsigned int)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::string::append(std::string const&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::string::append(char const*)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::runtime_error::runtime_error(std::string const&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::numpunct<char> const& std::use_facet<std::numpunct<char> >(std::locale const&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'typeinfo for unsigned short'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'typeinfo for std::runtime_error'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'typeinfo for std::bad_cast'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'vtable for __cxxabiv1::__vmi_class_type_info'
+f:/download/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/bin/ld.exe: the vtable symbol may be undefined because the class is missing its key function
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::runtime_error::what() const'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >::basic_ostringstream(std::_Ios_Openmode)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, int)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::str() const'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::string::swap(std::string&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >::~basic_ostringstream()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::type_info::before(std::type_info const&) const'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::bad_exception::~bad_exception()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::bad_alloc::~bad_alloc()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::_Rb_tree_increment(std::_Rb_tree_node_base*)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'typeinfo for std::bad_alloc'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'typeinfo for std::bad_exception'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::bad_alloc::what() const'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::bad_exception::what() const'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::exception::~exception()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::string::compare(char const*) const'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::__throw_bad_alloc()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'vtable for std::runtime_error'
+f:/download/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/bin/ld.exe: the vtable symbol may be undefined because the class is missing its key function
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::string::assign(char const*)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::ios_base::ios_base()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::basic_ios<char, std::char_traits<char> >::init(std::basic_streambuf<char, std::char_traits<char> >*)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::ios_base::~ios_base()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >::~basic_stringstream()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::basic_iostream<char, std::char_traits<char> >::~basic_iostream()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'vtable for std::basic_ios<char, std::char_traits<char> >'
+f:/download/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/bin/ld.exe: the vtable symbol may be undefined because the class is missing its key function
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'VTT for std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'vtable for std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >'
+f:/download/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/bin/ld.exe: the vtable symbol may be undefined because the class is missing its key function
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'vtable for std::basic_streambuf<char, std::char_traits<char> >'
+f:/download/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/bin/ld.exe: the vtable symbol may be undefined because the class is missing its key function
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'vtable for std::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >'
+f:/download/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/bin/ld.exe: the vtable symbol may be undefined because the class is missing its key function
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::string::compare(std::string const&) const'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::__detail::_List_node_base::_M_hook(std::__detail::_List_node_base*)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::__detail::_List_node_base::_M_unhook()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::basic_ios<char, std::char_traits<char> >::clear(std::_Ios_Iostate)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::istream& std::istream::_M_extract<double>(double&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::istream::get()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'typeinfo for int'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'vtable for std::istream'
+f:/download/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/bin/ld.exe: the vtable symbol may be undefined because the class is missing its key function
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'typeinfo for double'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'typeinfo for std::ios_base::failure'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'vtable for __cxxabiv1::__function_type_info'
+f:/download/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/bin/ld.exe: the vtable symbol may be undefined because the class is missing its key function
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'vtable for __cxxabiv1::__pointer_type_info'
+f:/download/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/bin/ld.exe: the vtable symbol may be undefined because the class is missing its key function
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'typeinfo for std::basic_streambuf<char, std::char_traits<char> >'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::basic_streambuf<char, std::char_traits<char> >::imbue(std::locale const&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::basic_streambuf<char, std::char_traits<char> >::sync()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::basic_streambuf<char, std::char_traits<char> >::showmanyc()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::basic_streambuf<char, std::char_traits<char> >::xsgetn(char*, int)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::basic_streambuf<char, std::char_traits<char> >::underflow()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::basic_streambuf<char, std::char_traits<char> >::uflow()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::basic_streambuf<char, std::char_traits<char> >::pbackfail(int)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::basic_streambuf<char, std::char_traits<char> >::xsputn(char const*, int)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::basic_streambuf<char, std::char_traits<char> >::overflow(int)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::out_of_range::~out_of_range()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'vtable for std::logic_error'
+f:/download/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/bin/ld.exe: the vtable symbol may be undefined because the class is missing its key function
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::out_of_range::out_of_range(std::string const&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::__detail::_List_node_base::_M_transfer(std::__detail::_List_node_base*, std::__detail::_List_node_base*)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::__detail::_List_node_base::swap(std::__detail::_List_node_base&, std::__detail::_List_node_base&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::runtime_error::runtime_error(std::string const&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::runtime_error::~runtime_error()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'typeinfo for std::out_of_range'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::logic_error::what() const'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::__throw_logic_error(char const*)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::ostream::operator<<(int)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::string::find(char const*, unsigned int, unsigned int) const'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::string::_M_leak_hard()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::ostream& std::ostream::_M_insert<unsigned long>(unsigned long)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::string::rfind(char, unsigned int) const'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'vtable for std::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >'
+f:/download/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/bin/ld.exe: the vtable symbol may be undefined because the class is missing its key function
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'VTT for std::basic_ostringstream<char, std::char_traits<char>, std::allocator<char> >'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >::basic_stringstream(std::_Ios_Openmode)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, unsigned int, std::allocator<char> const&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::ostream& std::ostream::_M_insert<double>(double)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to '__dynamic_cast'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'typeinfo for char const*'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'typeinfo for bool'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::string::_M_replace_aux(unsigned int, unsigned int, unsigned int, char)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::locale::locale(std::locale const&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::locale::operator=(std::locale const&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::string::replace(unsigned int, unsigned int, char const*, unsigned int)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'boost::atomics::detail::lockpool::get_lock_for(void const volatile*)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::string::find_last_of(char const*, unsigned int, unsigned int) const'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::codecvt<wchar_t, char, mbstate_t> const& std::use_facet<std::codecvt<wchar_t, char, mbstate_t> >(std::locale const&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libroscpp.so: error: undefined reference to 'std::locale::locale(char const*)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libxmlrpcpp.so: error: undefined reference to 'std::ostream::put(char)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libxmlrpcpp.so: error: undefined reference to 'std::ostream::flush()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libxmlrpcpp.so: error: undefined reference to 'std::ctype<char>::_M_widen_init() const'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libxmlrpcpp.so: error: undefined reference to 'std::__throw_bad_cast()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libxmlrpcpp.so: error: undefined reference to 'std::cout'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libxmlrpcpp.so: error: undefined reference to 'std::string::find(char, unsigned int) const'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libxmlrpcpp.so: error: undefined reference to 'std::string::_M_replace_safe(unsigned int, unsigned int, char const*, unsigned int)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libxmlrpcpp.so: error: undefined reference to 'std::ostream& std::ostream::_M_insert<bool>(bool)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libxmlrpcpp.so: error: undefined reference to 'std::basic_ios<char, std::char_traits<char> >::imbue(std::locale const&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/librosconsole.so: error: undefined reference to 'std::ostream& std::ostream::_M_insert<long>(long)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/librosconsole.so: error: undefined reference to 'std::logic_error::~logic_error()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/librosconsole.so: error: undefined reference to 'std::logic_error::logic_error(std::string const&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/librosconsole.so: error: undefined reference to 'std::logic_error::~logic_error()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/librosconsole.so: error: undefined reference to 'typeinfo for std::logic_error'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/librosconsole.so: error: undefined reference to 'std::string::append(unsigned int, char)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/librosconsole.so: error: undefined reference to 'std::ctype<char> const& std::use_facet<std::ctype<char> >(std::locale const&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/librosconsole.so: error: undefined reference to 'std::invalid_argument::~invalid_argument()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/librosconsole.so: error: undefined reference to 'bool std::has_facet<std::messages<char> >(std::locale const&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/librosconsole.so: error: undefined reference to 'std::messages<char> const& std::use_facet<std::messages<char> >(std::locale const&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/librosconsole.so: error: undefined reference to 'std::collate<char> const& std::use_facet<std::collate<char> >(std::locale const&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/librosconsole.so: error: undefined reference to 'std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(unsigned int, char, std::allocator<char> const&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/librosconsole.so: error: undefined reference to 'std::istream::operator>>(int&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/librosconsole.so: error: undefined reference to 'vtable for std::invalid_argument'
+f:/download/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/bin/ld.exe: the vtable symbol may be undefined because the class is missing its key function
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/librosconsole.so: error: undefined reference to 'std::invalid_argument::invalid_argument(std::string const&)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/librosconsole.so: error: undefined reference to 'std::invalid_argument::~invalid_argument()'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/librosconsole.so: error: undefined reference to 'typeinfo for std::invalid_argument'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/librostime.so: error: undefined reference to 'std::basic_ios<char, std::char_traits<char> >::rdbuf(std::basic_streambuf<char, std::char_traits<char> >*)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/librostime.so: error: undefined reference to 'std::string::resize(unsigned int, char)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/librostime.so: error: undefined reference to 'typeinfo for std::ostream'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/librostime.so: error: undefined reference to 'std::basic_streambuf<char, std::char_traits<char> >::setbuf(char*, int)'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/lib/libconsole_bridge.so: error: undefined reference to 'std::cerr'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/bits/basic_string.h:249: error: undefined reference to 'std::string::_Rep::_M_destroy(std::allocator<char> const&)'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/bits/basic_string.h:249: error: undefined reference to 'std::string::_Rep::_M_destroy(std::allocator<char> const&)'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/bits/basic_string.h:249: error: undefined reference to 'std::string::_Rep::_M_destroy(std::allocator<char> const&)'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/bits/basic_string.h:249: error: undefined reference to 'std::string::_Rep::_S_empty_rep_storage'
+C:/Boost/include/boost-1_55/boost/smart_ptr/detail/sp_counted_impl.hpp:158: error: undefined reference to 'std::type_info::operator==(std::type_info const&) const'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/include/ros/service_client.h:185: error: undefined reference to 'std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&)'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/bits/basic_string.h:249: error: undefined reference to 'std::string::_Rep::_M_destroy(std::allocator<char> const&)'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/bits/basic_string.h:240: error: undefined reference to '__cxa_end_cleanup'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/bits/basic_string.h:240: error: undefined reference to 'std::string::_Rep::_S_empty_rep_storage'
+CMakeFiles/add_two_ints_client.dir/add_two_ints_client/add_two_ints_client.cpp.o(.ARM.extab.text._ZN3ros13ServiceClient17deserializeFailedERKSt9exception+0x0): error: undefined reference to '__gxx_personality_v0'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/bits/stl_tree.h:1290: error: undefined reference to 'std::string::_Rep::_S_empty_rep_storage'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/bits/basic_string.h:249: error: undefined reference to 'std::string::_Rep::_S_empty_rep_storage'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/include/ros/service_client.h:112: error: undefined reference to '__cxa_begin_catch'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/include/ros/service_client.h:112: error: undefined reference to '__cxa_end_catch'
+C:/Boost/include/boost-1_55/boost/smart_ptr/shared_array.hpp:48: error: undefined reference to '__cxa_end_cleanup'
+C:/Boost/include/boost-1_55/boost/smart_ptr/shared_array.hpp:48: error: undefined reference to '__cxa_end_cleanup'
+F:/PROJECTS/infusion/ros-android/ros/install_isolated/include/ros/service_client.h:112: error: undefined reference to '__cxa_end_catch'
+C:/Boost/include/boost-1_55/boost/smart_ptr/shared_array.hpp:48: error: undefined reference to 'std::terminate()'
+C:/Boost/include/boost-1_55/boost/smart_ptr/shared_array.hpp:48: error: undefined reference to 'std::terminate()'
+C:/Boost/include/boost-1_55/boost/smart_ptr/shared_array.hpp:48: error: undefined reference to 'std::terminate()'
+C:/Boost/include/boost-1_55/boost/smart_ptr/detail/shared_count.hpp:169: error: undefined reference to '__cxa_begin_catch'
+C:/Boost/include/boost-1_55/boost/smart_ptr/detail/shared_count.hpp:172: error: undefined reference to '__cxa_rethrow'
+C:/Boost/include/boost-1_55/boost/smart_ptr/detail/shared_count.hpp:169: error: undefined reference to '__cxa_end_catch'
+C:/Boost/include/boost-1_55/boost/smart_ptr/shared_array.hpp:48: error: undefined reference to '__cxa_end_cleanup'
+CMakeFiles/add_two_ints_client.dir/add_two_ints_client/add_two_ints_client.cpp.o(.ARM.extab.text._ZN3ros13ServiceClient4callIN16roscpp_tutorials15TwoIntsRequest_ISaIvEEENS2_16TwoIntsResponse_IS4_EEEEbRKT_RT0_RKSs+0x0): error: undefined reference to '__gxx_personality_v0'
+CMakeFiles/add_two_ints_client.dir/add_two_ints_client/add_two_ints_client.cpp.o(.ARM.extab.text._ZN3ros13ServiceClient4callIN16roscpp_tutorials15TwoIntsRequest_ISaIvEEENS2_16TwoIntsResponse_IS4_EEEEbRKT_RT0_RKSs+0xe4): error: undefined reference to 'typeinfo for std::exception'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/bits/stl_pair.h:96: error: undefined reference to 'std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&)'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/bits/stl_pair.h:96: error: undefined reference to 'std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&)'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/bits/stl_pair.h:96: error: undefined reference to 'std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&)'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/bits/stl_pair.h:96: error: undefined reference to 'std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::string const&)'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/bits/stl_tree.h:398: error: undefined reference to '__cxa_begin_catch'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/bits/stl_tree.h:401: error: undefined reference to '__cxa_rethrow'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/bits/stl_tree.h:398: error: undefined reference to '__cxa_begin_catch'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/bits/stl_tree.h:401: error: undefined reference to '__cxa_rethrow'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/bits/stl_tree.h:398: error: undefined reference to '__cxa_end_catch'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/bits/stl_tree.h:1271: error: undefined reference to '__cxa_rethrow'
+CMakeFiles/add_two_ints_client.dir/add_two_ints_client/add_two_ints_client.cpp.o(.ARM.extab.text._ZNSt8_Rb_treeISsSt4pairIKSsSsESt10_Select1stIS2_ESt4lessISsESaIS2_EE7_M_copyEPKSt13_Rb_tree_nodeIS2_EPSA_+0x0): error: undefined reference to '__gxx_personality_v0'
+F:/PROJECTS/infusion/ros-android/ros/src/ros_tutorials/roscpp_tutorials/add_two_ints_client/add_two_ints_client.cpp:35: error: undefined reference to 'std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&)'
+F:/PROJECTS/infusion/ros-android/ros/src/ros_tutorials/roscpp_tutorials/add_two_ints_client/add_two_ints_client.cpp:43: error: undefined reference to 'std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&)'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/bits/basic_string.h:555: error: undefined reference to 'std::string::assign(std::string const&)'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/bits/basic_string.h:1149: error: undefined reference to 'std::string::assign(char const*, unsigned int)'
+F:/PROJECTS/infusion/ros-android/ros/src/ros_tutorials/roscpp_tutorials/add_two_ints_client/add_two_ints_client.cpp:38: error: undefined reference to 'std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&)'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/iostream:74: error: undefined reference to 'std::ios_base::Init::Init()'
+f:/download/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/iostream:74: error: undefined reference to 'std::ios_base::Init::~Init()'
+CMakeFiles/add_two_ints_client.dir/add_two_ints_client/add_two_ints_client.cpp.o(.ARM.extab.text.startup+0x0): error: undefined reference to '__gxx_personality_v0'
+CMakeFiles/add_two_ints_client.dir/add_two_ints_client/add_two_ints_client.cpp.o:add_two_ints_client.cpp:typeinfo for boost::checked_array_deleter<unsigned char>: error: undefined reference to 'vtable for __cxxabiv1::__class_type_info'
+f:/download/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/bin/ld.exe: the vtable symbol may be undefined because the class is missing its key function
+CMakeFiles/add_two_ints_client.dir/add_two_ints_client/add_two_ints_client.cpp.o:add_two_ints_client.cpp:typeinfo for boost::detail::sp_counted_base: error: undefined reference to 'vtable for __cxxabiv1::__class_type_info'
+f:/download/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/bin/ld.exe: the vtable symbol may be undefined because the class is missing its key function
+CMakeFiles/add_two_ints_client.dir/add_two_ints_client/add_two_ints_client.cpp.o:add_two_ints_client.cpp:typeinfo for boost::detail::sp_counted_impl_pd<unsigned char*, boost::checked_array_deleter<unsigned char> >: error: undefined reference to 'vtable for __cxxabiv1::__si_class_type_info'
+f:/download/android-ndk-r10e/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/../lib/gcc/arm-linux-androideabi/4.9/../../../../arm-linux-androideabi/bin/ld.exe: the vtable symbol may be undefined because the class is missing its key function
+collect2.exe: error: ld returned 1 exit status
+make[2]: *** [F:/PROJECTS/infusion/ros-android/ros/devel_isolated/roscpp_tutorials/lib/roscpp_tutorials/add_two_ints_client] Error 1
+make[1]: *** [CMakeFiles/add_two_ints_client.dir/all] Error 2
+make: *** [all] Error 2
+Base path: F:\PROJECTS\infusion\ros-android\ros
+Source space: F:\PROJECTS\infusion\ros-android\ros\src
+Build space: F:\PROJECTS\infusion\ros-android\ros\build_isolated
+Devel space: F:\PROJECTS\infusion\ros-android\ros\devel_isolated
+Install space: F:\PROJECTS\infusion\ros-android\ros\install_isolated
+Additional CMake Arguments: -DCMAKE_BUILD_TYPE=RelWithDebInfo -DBoost_USE_STATIC_LIBS=1 -DBUILD_SHARED_LIBS=1 -G Unix Makefiles -DCMAKE_TOOLCHAIN_FILE=F:\PROJECTS\infusion\ros-android\toolchain.cmake
+Whitelisted packages: catkin, cmake_modules, cpp_common, gencpp, geneus, genlisp, genmsg, genpy, message_generation, message_runtime, rosbuild, rosconsole, roscpp, roscpp_serialization, roscpp_traits, roscpp_tutorials, rosgraph_msgs, roslang, roslib, rospack, rostime, rosunit, std_msgs, xmlrpcpp
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~  traversing 24 packages in topological order:
+~~  - catkin
+~~  - genmsg
+~~  - gencpp
+~~  - geneus
+~~  - genlisp
+~~  - genpy
+~~  - cmake_modules
+~~  - cpp_common
+~~  - message_generation
+~~  - message_runtime
+~~  - rosbuild
+~~  - roscpp_traits
+~~  - roslang
+~~  - rospack
+~~  - roslib
+~~  - rostime
+~~  - roscpp_serialization
+~~  - rosunit
+~~  - rosconsole
+~~  - std_msgs
+~~  - rosgraph_msgs
+~~  - xmlrpcpp
+~~  - roscpp
+~~  - roscpp_tutorials
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Skipping package: 'catkin'
+Skipping package: 'genmsg'
+Skipping package: 'gencpp'
+Skipping package: 'geneus'
+Skipping package: 'genlisp'
+Skipping package: 'genpy'
+Skipping package: 'cmake_modules'
+Skipping package: 'cpp_common'
+Skipping package: 'message_generation'
+Skipping package: 'message_runtime'
+Skipping package: 'rosbuild'
+Skipping package: 'roscpp_traits'
+Skipping package: 'roslang'
+Skipping package: 'rospack'
+Skipping package: 'roslib'
+Skipping package: 'rostime'
+Skipping package: 'roscpp_serialization'
+Skipping package: 'rosunit'
+Skipping package: 'rosconsole'
+Skipping package: 'std_msgs'
+Skipping package: 'rosgraph_msgs'
+Skipping package: 'xmlrpcpp'
+Skipping package: 'roscpp'
+
+==> Processing catkin package: 'roscpp_tutorials'
+==> Building with env: 'F:\PROJECTS\infusion\ros-android\ros\install_isolated\env.bat'
+Makefile exists, skipping explicit cmake invocation...
+==> make cmake_check_build_system in 'F:\PROJECTS\infusion\ros-android\ros\build_isolated\roscpp_tutorials'
+==> make -j16 -l16 in 'F:\PROJECTS\infusion\ros-android\ros\build_isolated\roscpp_tutorials'
+<== Failed to process package 'roscpp_tutorials': 
+  Command '['F:\\PROJECTS\\infusion\\ros-android\\ros\\install_isolated\\env.bat', 'make', '-j16', '-l16']' returned non-zero exit status 2
+
+Reproduce this error by running:
+==> cd 'F:\PROJECTS\infusion\ros-android\ros\build_isolated\roscpp_tutorials' && 'F:\PROJECTS\infusion\ros-android\ros\install_isolated\env.bat' make -j16 -l16
+
+Command failed, exiting.
